@@ -1,0 +1,21 @@
+{
+  "summary": "Generated a public llms.txt for the maintained Node.js Undici documentation website with Sourcey 3.6.5, verified six live targets, and opened upstream pull request nodejs/undici-website#18.",
+  "observations": [
+    "runx --version output: runx-cli 0.7.0",
+    "project_repo: https://github.com/nodejs/undici-website",
+    "pinned_commit: 272f5ae6b28b308a3bf2c707e55445a36a3d4de7",
+    "sourcey_version: sourcey@3.6.5, pinned exactly in package.json and package-lock.json",
+    "sourcey_command: npm ci && npm run build:fetch-docs && npm run build:html && npm run build:llms",
+    "sourcey_config: https://raw.githubusercontent.com/centwright/undici-website/f1f7ea3baa92ebffe13970ebcbe3aecc5201c9a6/sourcey.config.ts",
+    "generation_proof: https://raw.githubusercontent.com/centwright/undici-website/f1f7ea3baa92ebffe13970ebcbe3aecc5201c9a6/scripts/build-llms.mjs invokes Sourcey's installed CLI and then deterministically maps generated links to the website's case-sensitive routes; llms.txt was not hand-written",
+    "public_url: https://raw.githubusercontent.com/centwright/undici-website/bounty-evidence/llms.txt",
+    "upstream_pr: https://github.com/nodejs/undici-website/pull/18",
+    "receipt_ref: runx:receipt:sha256:0d68645e7d663d7d95dd11ec12b3938b315c04ecfa7abb4184c9a7689ffec509",
+    "audit_1: https://undici-website.vercel.app/ returned HTTP 200",
+    "audit_2: https://undici-website.vercel.app/getting-started.html returned HTTP 200 and resolved to /getting-started",
+    "audit_3: https://undici-website.vercel.app/best-practices/undici-vs-builtin-fetch.html returned HTTP 200",
+    "audit_4: https://undici-website.vercel.app/api/Agent.html returned HTTP 200 and resolved to the case-sensitive /api/Agent route",
+    "audit_5: https://undici-website.vercel.app/api/Fetch.html returned HTTP 200 and resolved to the case-sensitive /api/Fetch route",
+    "audit_6: https://undici-website.vercel.app/api/WebSocket.html returned HTTP 200 and resolved to the case-sensitive /api/WebSocket route"
+  ]
+}
