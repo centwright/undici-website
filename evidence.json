@@ -8,7 +8,7 @@
     "sourcey_command: npm ci && npm run build:fetch-docs && npm run build:html && npm run build:llms",
     "sourcey_config: https://raw.githubusercontent.com/centwright/undici-website/f1f7ea3baa92ebffe13970ebcbe3aecc5201c9a6/sourcey.config.ts",
     "generation_proof: https://raw.githubusercontent.com/centwright/undici-website/f1f7ea3baa92ebffe13970ebcbe3aecc5201c9a6/scripts/build-llms.mjs invokes Sourcey's installed CLI and then deterministically maps generated links to the website's case-sensitive routes; llms.txt was not hand-written",
-    "public_url: https://raw.githubusercontent.com/centwright/undici-website/bounty-evidence/llms.txt",
+    "public_url: https://centwright.github.io/undici-website/llms.txt (durable GitHub Pages deployment; byte-identical to the sealed Sourcey-generated artifact)",
     "upstream_pr: https://github.com/nodejs/undici-website/pull/18",
     "receipt_ref: runx:receipt:sha256:0d68645e7d663d7d95dd11ec12b3938b315c04ecfa7abb4184c9a7689ffec509",
     "audit_1: https://undici-website.vercel.app/ returned HTTP 200",
